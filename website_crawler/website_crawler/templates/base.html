@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load staticfiles i18n %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Web Crawler{% endblock title %}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/webcrawler.css' %}?v=1" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {% block head %} {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-app" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggele" data-toggle="collapse" data-toggle="#menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class-="icon-bar"></span>
+                        <span class-="icon-bar"></span>
+                        <span class-="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'home' %}">Web Crawler</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% endblock body %}
+</body>
+</html>

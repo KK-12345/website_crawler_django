@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapi.com/css?family=Audiowide):
+
+body{
+    padding-top: 70px;
+}
+
+header .navbar-brand {
+    font-size: 1.4em;
+    font-weight: 200;
+    font-family: "Audiowide", cursive;
+}
+
+main .container {
+
+}
+
+.page-header h1 {
+    margin: 0;
+    font-height: 100;
+    font-size: 2em;
+}
+
+.no-data {
+    text-align: center;
+    padding: 1em 0;
+}
